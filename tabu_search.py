@@ -1,5 +1,4 @@
 import random
-import math
 
 class TabuSearch:
     def __init__(self):
@@ -18,26 +17,26 @@ class TabuSearch:
         self.customer_costs = []
 
     def parse_input(self, filename):
-        input = open(filename, "r")
-        first_line = input.readline().split()
+        input_file = open(filename, "r")
+        first_line = input_file.readline().split()
         self.num_storages = int(first_line[0])
         self.num_customers = int(first_line[1])
 
         for i in range(self.num_storages):
-            line = input.readline().split()
+            line = input_file.readline().split()
             x = int(line[0])
             y = int(line[1])
             self.capacities.append(x)
             self.storage_costs.append(y)
 
         for i in range(self.num_customers):
-            x = int(input.readline())
+            x = int(input_file.readline())
             self.demands.append(x)
-            costs_line = input.readline().split()
+            costs_line = input_file.readline().split()
             self.customer_costs.append(list(map(float, costs_line)))
 
     def generate_initial_solution(self):
-        # TODO: Note 1: it should have more True values, otherwise it has difficulties finding
+        # Note 1: it should have more True values, otherwise it has difficulties finding
         # a starting point
         # solution = random.choices([True, False], k=num_storages)
 
@@ -111,7 +110,7 @@ class TabuSearch:
     # Outer loop - optimizes which storages are open
     def find_best_solution(self, solution):
         current_cost = self.find_best_allocation(solution)
-        while current_cost == False:
+        while not current_cost:
             current_cost = self.find_best_allocation(solution)
         min_cost = current_cost
         best_solution = solution

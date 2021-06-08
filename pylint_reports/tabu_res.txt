@@ -1,0 +1,26 @@
+************* Module tabu_search
+tabu_search.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+tabu_search.py:3:0: C0115: Missing class docstring (missing-class-docstring)
+tabu_search.py:3:0: R0902: Too many instance attributes (8/7) (too-many-instance-attributes)
+tabu_search.py:19:4: C0116: Missing function or method docstring (missing-function-docstring)
+tabu_search.py:27:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+tabu_search.py:28:12: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+tabu_search.py:33:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+tabu_search.py:25:12: W0612: Unused variable 'i' (unused-variable)
+tabu_search.py:38:4: C0116: Missing function or method docstring (missing-function-docstring)
+tabu_search.py:51:4: C0116: Missing function or method docstring (missing-function-docstring)
+tabu_search.py:64:4: C0116: Missing function or method docstring (missing-function-docstring)
+tabu_search.py:74:12: W0621: Redefining name 'i' from outer scope (line 70) (redefined-outer-name)
+tabu_search.py:66:8: W0612: Unused variable 'current_total_cost' (unused-variable)
+tabu_search.py:98:4: C0116: Missing function or method docstring (missing-function-docstring)
+tabu_search.py:99:12: C0103: Variable name "t" doesn't conform to snake_case naming style (invalid-name)
+tabu_search.py:98:4: R0201: Method could be a function (no-self-use)
+tabu_search.py:104:4: C0116: Missing function or method docstring (missing-function-docstring)
+tabu_search.py:111:4: C0116: Missing function or method docstring (missing-function-docstring)
+tabu_search.py:120:12: W0612: Unused variable 'i' (unused-variable)
+tabu_search.py:142:0: C0116: Missing function or method docstring (missing-function-docstring)
+tabu_search.py:152:12: W0612: Unused variable 'i' (unused-variable)
+
+-----------------------------------
+Your code has been rated at 8.14/10
+

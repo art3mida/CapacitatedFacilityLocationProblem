@@ -1,0 +1,13 @@
+************* Module generate_test
+generate_test.py:61:0: C0325: Unnecessary parens after 'return' keyword (superfluous-parens)
+generate_test.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+generate_test.py:4:0: W0105: String statement has no effect (pointless-string-statement)
+generate_test.py:59:0: C0116: Missing function or method docstring (missing-function-docstring)
+generate_test.py:66:0: C0116: Missing function or method docstring (missing-function-docstring)
+generate_test.py:68:8: W0612: Unused variable 'i' (unused-variable)
+generate_test.py:73:0: C0116: Missing function or method docstring (missing-function-docstring)
+generate_test.py:76:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.30/10 (previous run: 7.76/10, +0.54)
+

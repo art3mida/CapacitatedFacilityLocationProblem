@@ -58,13 +58,10 @@ import math
 
 def in_city_center(map_size, location):
     center_boundary = map_size / 4
-    if (location[0] > center_boundary and \
+    return (location[0] > center_boundary and \
             location[0] < map_size - center_boundary and \
             location[1] > center_boundary and \
-            location[1] < map_size - center_boundary):
-        return True
-    else:
-        return False
+            location[1] < map_size - center_boundary)
 
 def generate_locations(num_facilities, map_size):
     locations = []
@@ -91,7 +88,7 @@ def main():
     with open("input/loc{}.txt".format(problem_index), "w") as locations_file:
         locations_file.write("{} {}\n".format(num_storages, num_customers))
         locations_file.write("{}\n".format(map_size))
-        
+
         for i in range(num_storages):
             locations_file.write("{} {}\n".format(storage_locations[i][0], \
                 storage_locations[i][1]))
@@ -110,7 +107,7 @@ def main():
         output.write("{} {}\n".format(num_storages, num_customers))
 
         for i in range(num_storages):
-            if(in_city_center(map_size, storage_locations[i])):
+            if in_city_center(map_size, storage_locations[i]):
                 output.write("{} {}\n".format(storage_size, storage_cost_center))
             else:
                 output.write("{} {}\n".format(storage_size, storage_cost_normal))
